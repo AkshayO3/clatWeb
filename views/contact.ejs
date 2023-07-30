@@ -1,2 +1,21 @@
 <%- include("partials/header"); -%>
-<h1>Contact</h1>
+<div class="contact-container">
+<div class="mx-5 py-4">
+<h1>Reach Out to Us</h1>
+    <p class="mb-2">At Clatified, we are dedicated to providing the best educational services for our customers. If you have any
+        questions or feedback, please don't hesitate to contact us using the form below.
+    We look forward to hearing from you!</p>
+    <form action="contact.ejs" method="post">
+        <div class=" pt-2 form-group">
+            <label>Your Name</label>
+            <input  class="form-control" type="text" name="studName"  >
+            <label>Your Email</label>
+            <input class="form-control" type="email" name="studEmail">
+            <label>Your Message</label>
+            <textarea class="form-control" name="message" rows="5" cols="30"></textarea>
+            <button class="mt-3 btn btn-warning" type="submit" name="button">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+<%- include("partials/footer") -%>

@@ -1,0 +1,116 @@
+header{
+    background-color: #008080;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:#800000;
+}
+.ul{
+    margin-top: 2rem;
+    margin-left: 50em;
+}
+.ulx{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 10px 0 0;
+    gap: 225%;
+}
+.custom-container{
+    background-color: #00B3B3;
+    width: 100%;
+}
+.custom-emphasis{
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+.custom-para{
+    font-size: 2rem;
+    font-family: 'Open Sans',sans-serif;
+    color: black;
+}
+.about-img{
+    padding-left: 25%;
+}
+footer{
+    background-color: #408000;
+}
+.text-body-secondary{
+    font-size: 1.5rem;
+}
+.about-container{
+    background-color: antiquewhite;
+}
+.form-control{
+    background-color: #00000012;
+    width: 400px;
+}
+.contact-container{
+    background-color: antiquewhite
+}
+.courses-container{
+    background-color: #333333;
+}
+.course{
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+.co-img{
+    border-radius: 10%;
+    grid-row: span 2;
+    height:400px ;
+    width:500px;
+}
+.course-text{
+    color: #f1c40f;
+    font-size: 4rem;
+    padding-top: 15px;
+}
+.course-para{
+    color: #f1c40f;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+hr{
+    color: orange;
+}
+.card {
+    border:none;
+    padding: 10px 50px;
+}
+
+.card::after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+
+
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden;
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card:hover .btn-outline-primary{
+    color:white;
+    background:#007bff;
+}
+.card-text{
+    color: darkolivegreen;
+}
