@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -13,7 +14,7 @@ const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
         user: 'akshaybhandari020@gmail.com',
-        pass: 'wbrcyetwawogufbc'
+        pass: process.env.PASSWORD
     }
 });
 
