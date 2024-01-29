@@ -115,3 +115,9 @@ hr{
 .card-text{
     color: darkolivegreen;
 }
+.contact_form input:focus{
+    background-color: lightyellow;
+}
+.contact_form textarea:focus{
+    background-color: lightyellow;
+}
